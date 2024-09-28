@@ -747,6 +747,9 @@
 .videos {
     padding-top: 142px;
     padding-bottom: 27px;
+    background-image: url(../img/home/video/video-bg-logo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .videos-container {
@@ -776,10 +779,10 @@
 
 .videos-main-info {
     padding-top: 24px;
-    margin-bottom: 8px;
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    color: #828080;
+
 }
 
 .videos-main-title {
@@ -790,28 +793,10 @@
     letter-spacing: 0.01em;
     text-align: left;
     color: #434343;
+    margin-bottom: 8px;
 }
 
-.videos-main-btn {
-    min-width: 164px;
-    font-family: Museo Sans Cyrl, sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 35px;
-    letter-spacing: 0.01em;
-    text-align: center;
-    background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
-    box-shadow: 0px 5px 30px 0px #00000012;
-    border: none;
-    color: white;
-    border-radius: 3px;
-
-}
-
-.videos-main-bottom {
-    display: flex;
-    align-items: center;
-    gap: 2px;
+.videos-main-bottom-view {
     font-family: Museo Sans Cyrl, sans-serif;
     font-size: 15px;
     font-style: italic;
@@ -819,12 +804,57 @@
     line-height: 35px;
     letter-spacing: 0.01em;
     text-align: left;
+    color: #828080;
 
+}
+
+.videos-main-bottom-time {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #828080;
+
+}
+
+.videos-main-info-right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.videos-main-btn {
+    width: 164px;
+    background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
+    box-shadow: 0px 5px 30px 0px #00000012;
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: none;
+    border-radius: 3px;
 }
 
 .videos-main-bottom-link {
-    margin-left: auto;
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #828080;
+    text-align: right;
 }
+
 
 .video-catalog {
     max-width: 247px;
@@ -897,4 +927,94 @@
     letter-spacing: 0.01em;
     text-align: left;
     color: #B4B4B4;
+}
+
+@media (max-width:740px) {
+    .videos {
+        padding-top: 81px;
+        padding-bottom: 3px;
+        background-size: contain;
+    }
+
+    .videos-container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .videos-main-video {
+        height: 181px;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .videos-main-info {
+        flex-direction: column;
+        padding-top: 30px;
+        gap: 24px;
+    }
+
+    .videos-main-title {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 6px;
+    }
+
+    .videos-main-bottom-view,
+    .videos-main-bottom-time {
+        font-size: 15px;
+        font-style: italic;
+        line-height: 35px;
+    }
+
+    .videos-main-info-right {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .videos-main-btn {
+        background: #ECECEC;
+        width: 202px;
+        color: #3B3B3B;
+    }
+
+    .videos-main-bottom-link {
+        font-size: 14px;
+    }
+
+    .video-catalog {
+        max-width: 100%;
+        padding-right: 10px;
+        max-height: 280px;
+    }
+
+    .video-catalog-cards {
+        gap: 8px;
+    }
+
+    .video-catalog-card {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .video-catalog-img {
+        width: 100%;
+        height: 78px;
+        object-fit: cover;
+        border-radius: 3px;
+        margin-bottom: 0;
+    }
+
+    .video-catalog-card-name {
+        font-size: 14px;
+        line-height: 17.5px;
+        margin-bottom: 6px;
+    }
+
+    .video-catalog-card-name {
+        font-size: 10px;
+        font-style: italic;
+        line-height: 15px;
+    }
 }
