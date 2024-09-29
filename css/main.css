@@ -1299,10 +1299,11 @@
 }
 
 @media (max-width:540px) {
-    .book-info-container{
+    .book-info-container {
         padding-left: 0;
         padding-right: 0;
     }
+
     .book-info-info {
         padding-top: 36px;
         padding-left: 43px;
@@ -1337,4 +1338,217 @@
         font-weight: 700;
         line-height: 54px;
     }
+}
+
+
+
+/* about start */
+
+.about {
+    padding-top: 110px;
+    padding-bottom: 84px;
+}
+
+.about-container {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    display: flex;
+    gap: 20px;
+
+}
+
+.about-left {
+    max-width: 355px;
+}
+
+.about-title {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50.5px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #3B3B3B;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.about-time {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    display: block;
+    color: #828080;
+    margin-bottom: 21px;
+}
+
+.about-text {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #3B3B3B;
+}
+
+.about-right {
+    max-width: 729px;
+    margin-left: auto;
+}
+
+.about-right-text {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 24.48px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #3B3B3B;
+    margin-bottom: 33px;
+    max-width: 528px;
+}
+
+.about-right-name {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #828080;
+    margin-bottom: 45px;
+}
+
+.about-right-text-2 {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding-left: 48px;
+    border-left: 2px solid #E122F9;
+    margin-bottom: 53px;
+    color: #828080;
+}
+
+.about-right-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-right-link {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #5C90DE;
+    text-decoration: none;
+}
+
+.about-right-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-decoration: none;
+    color: #3B3B3B;
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding-top: 50px;
+        padding-bottom: 56px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 36px;
+        padding-left: 43px;
+        padding-right: 43px;
+    }
+
+    .about-left {
+        max-width: 100%;
+    }
+
+    .about-title {
+        font-size: 36px;
+        line-height: 46px;
+        margin-bottom: 17px;
+    }
+
+    .about-time {
+        font-size: 14px;
+        line-height: 23px;
+        margin-bottom: 21px;
+    }
+
+    .about-text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .about-right-text {
+        font-size: 14px;
+        line-height: 26px;
+        margin-bottom: 17px;
+    }
+
+    .about-right-name {
+        font-size: 14px;
+        line-height: 23px;
+        margin-bottom: 23px;
+    }
+
+    .about-right-text-2 {
+        padding-left: 18px;
+        font-size: 14px;
+        line-height: 26px;
+        margin-bottom: 16px;
+    }
+
+    .about-right-bottom {
+        flex-direction: column;
+        gap: 24px;
+        align-items: start;
+    }
+
+    .about-right-right {
+        background-color: #ECECEC;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 7px;
+        padding-bottom: 6px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 35px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        border-radius: 3px;
+        display: inline-flex;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
 }
