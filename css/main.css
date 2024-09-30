@@ -122,7 +122,6 @@
 
 /* footer start */
 .footer {
-    background-color: white;
     background-image: url(../img/layout/footer/bg.png);
     background-size: 100%;
     background-position-y: bottom;
@@ -478,7 +477,7 @@
 /* team start */
 
 .team {
-    padding-top: 60px;
+    padding-top: 360px;
     padding-bottom: 0;
     background-color: white;
 }
@@ -677,7 +676,6 @@
 .audio-link {
     padding: 0 6px;
     font-family: Museo Sans Cyrl, sans-serif;
-    background-color: #ECECEC;
     color: #434343;
     font-size: 15px;
     font-weight: 600;
