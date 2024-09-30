@@ -1552,3 +1552,160 @@
     }
 
 }
+
+
+.book-about {
+    padding-top: 83px;
+    padding-bottom: 129px;
+}
+
+.book-about-container {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.book-about-title {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 40.8px;
+    font-weight: 700;
+    line-height: 50.5px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #3B3B3B;
+    margin-bottom: 24px;
+}
+
+.book-about-text {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #3B3B3B;
+    margin-bottom: 105px;
+}
+
+.book-about-shop {
+    display: flex;
+    gap: 69px;
+    margin-bottom: 36px;
+}
+
+.book-about-shop-books {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    max-width: 471px;
+    width: 100%;
+}
+
+.book-about-shop-books-item {
+    width: 100%;
+    max-width: 84px;
+}
+
+.book-about-shop-books .book-about-shop-books-item:nth-child(2) {
+    max-width: 231px;
+}
+
+.book-about-shop-books-info {
+    max-width: 451px;
+}
+
+.book-about-shop-books-title {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50.5px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #3B3B3B;
+    margin-bottom: 24px;
+}
+
+.book-about-shop-books-text {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 56px;
+}
+
+.book-about-shop-books-shop {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.book-about-shop-books-btn {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
+    box-shadow: 0px 5px 30px 0px #00000012;
+    width: 222px;
+    border: none;
+    border-radius: 3px;
+    color: #FFFFFF;
+}
+
+.book-about-shop-books-price {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 50.5px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #3B3B3B;
+}
+
+.book-about-shop-text {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #3B3B3B;
+    margin-bottom: 30px;
+}
+
+.book-about-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-about-bottom-list {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.book-about-bottom-item {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #828080;
+}
+
+.book-about-bottom-name {
+    font-family: Museo Sans Cyrl , sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    text-align: right;
+    color: #3B3B3B;
+}
