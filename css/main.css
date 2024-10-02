@@ -1,7 +1,20 @@
+@font-face {
+    font-family: "Museo Sans Cyrl";
+    src: url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.eot");
+    src: url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.svg#Museo Sans Cyrl 500 Regular")format("svg");
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 /* header start */
@@ -285,7 +298,7 @@
 /* blog start */
 
 .blog {
-    padding-top: 38px;
+    padding-top: 364px;
     padding-bottom: 62px;
 }
 
@@ -442,7 +455,7 @@
 
 @media (max-width: 768px) {
     .blog {
-        padding-top: 28px;
+        padding-top: 547px;
         padding-bottom: 40px;
     }
 
@@ -477,7 +490,7 @@
 /* team start */
 
 .team {
-    padding-top: 360px;
+    padding-top: 64px;
     padding-bottom: 0;
     background-color: white;
 }
@@ -685,6 +698,8 @@
     display: inline-block;
     text-decoration: none;
     border-radius: 3px;
+    background-color: #ECECEC;
+    width: 177px;
 }
 
 @media (max-width:540px) {
@@ -1698,7 +1713,7 @@
 }
 
 .book-about-bottom-name {
-    font-family: Museo Sans Cyrl , sans-serif;
+    font-family: Museo Sans Cyrl, sans-serif;
     font-size: 15px;
     font-style: italic;
     font-weight: 400;
@@ -1706,4 +1721,292 @@
     letter-spacing: 0.01em;
     text-align: right;
     color: #3B3B3B;
+}
+
+.book-about-shop .book-about-bottom-list {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .book-about-shop {
+        flex-direction: column;
+        gap: 36px;
+    }
+}
+
+@media (max-width: 540px) {
+    .book-about {
+        padding-top: 0;
+        padding-bottom: 56px;
+    }
+
+    .book-about-info {
+        background-color: #F8F8F8;
+        padding: 56px 42px 71px;
+    }
+
+    .book-about-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .book-about-title {
+        font-size: 36px;
+        line-height: 50.5px;
+        margin-bottom: 24px;
+    }
+
+    .book-about-text {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+
+    .book-about-shop-books {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 0;
+        padding-top: 56px;
+    }
+
+    .book-about-shop-books-item {
+        max-width: 49px;
+        width: 100%;
+        display: block;
+    }
+
+    .book-about-shop-books .book-about-shop-books-item:nth-child(2) {
+        max-width: 140px;
+        width: 100%;
+    }
+
+    .book-about-shop-books-info {
+        padding: 0 42px;
+    }
+
+    .book-about-shop-books-title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+        margin-bottom: 24px;
+    }
+
+    .book-about-shop-books-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 36px;
+    }
+
+    .book-about-shop-books-shop {
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 36px;
+        margin-bottom: 36px;
+    }
+
+    .book-about-shop-books-btn {
+        width: 100%;
+    }
+
+    .book-about-shop-books-price {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 50.5px;
+
+    }
+
+    .book-about-shop .book-about-bottom-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .book-about-shop-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 24px;
+        padding: 0 42px;
+    }
+
+    .book-about-bottom-list {
+        display: none;
+    }
+
+    .book-about-bottom-name {
+        max-width: 153px;
+        margin-left: auto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        padding-right: 42px;
+    }
+}
+
+/* hero start */
+.hero {
+    padding-top: 81px;
+    padding-bottom: 88px;
+    background-image: url(../img/home/hero/bg.png);
+    background-repeat: no-repeat;
+    background-position-x: calc(50% - 386px);
+}
+
+.hero-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 1240px;
+}
+
+.hero-box {
+    max-width: 853px;
+    margin-left: auto;
+}
+
+.hero-title-1 {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #3B3B3B;
+    margin-bottom: 22px;
+}
+
+.hero-title-2 {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 76px;
+    font-weight: 700;
+    line-height: 85px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #434343;
+    margin-left: 108px;
+    font-size: 72px;
+    background: linear-gradient(90.21deg, #E122F9 4.11%, #6F2FF5 53.99%, #2B1EDD 99.88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.hero-title-3 {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 85px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #434343;
+    margin-left: 50px;
+    margin-bottom: 57px;
+    background: linear-gradient(90.21deg, #E122F9 4.11%, #6F2FF5 53.99%, #2B1EDD 99.88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.hero-text {
+    max-width: 608px;
+    margin-left: auto;
+    margin-right: 37px;
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 24.48px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 58px;
+
+}
+
+.hero-text b {
+    display: block;
+}
+
+.hero-box-link {
+    display: flex;
+    justify-content: end;
+}
+
+.hero-link {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #3B3B3B;
+    text-decoration: none;
+}
+
+
+@media (max-width:880px) {
+    .hero {
+        background-position-x: center;
+        background-position-y: center;
+        background-image: url(../img/home/hero/res-bg.png);
+    }
+
+    .hero-box {
+        max-width: 100%;
+    }
+
+    .hero-title-1 {
+        text-align: center;
+    }
+
+    .hero-title-2 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .hero-title-3 {
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 395px;
+    }
+}
+
+@media (max-width:540px) {
+    .hero {
+        padding-top: 40px;
+        padding-bottom: 38px;
+    }
+
+    .hero-title-1 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 18px;
+    }
+
+    .hero-title-2 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 17px;
+    }
+
+    .hero-title-3 {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 385px;
+    }
+
+    .hero-text {
+        font-size: 18px;
+        line-height: 26px;
+        padding-left: 42px;
+        padding-right: 42px;
+        margin: 0;
+        margin-bottom: 28px;
+    }
 }
