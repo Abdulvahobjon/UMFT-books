@@ -2,18 +2,19 @@
     font-family: "Museo Sans Cyrl";
     src: url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.eot");
     src: url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.svg#Museo Sans Cyrl 500 Regular")format("svg");
+        url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/a294fb387eda4c52a3224aa008dcb2fe.svg#Museo Sans Cyrl 500 Regular")format("svg");
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -21,6 +22,7 @@ html{
 .header {
     padding-top: 26px;
     padding-bottom: 28px;
+    border-bottom: 1px solid #F2F2F2;
 }
 
 .header-container {
@@ -38,6 +40,25 @@ html{
     display: flex;
 }
 
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    margin-left: auto;
+    margin-right: 32px;
+}
+
+.nav-link {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #000000;
+    text-decoration: none;
+}
+
 .header-btn {
     margin-left: auto;
     margin-right: 24px;
@@ -52,6 +73,10 @@ html{
     text-align: center;
     color: #3B3B3B;
     cursor: pointer;
+}
+
+.books-header .header-btn {
+    margin-left: 0;
 }
 
 .header-line {
@@ -100,7 +125,7 @@ html{
     display: none;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 970px) {
     .header {
         padding-top: 24px;
         padding-bottom: 24px;
@@ -108,6 +133,10 @@ html{
 
     .header-logo img {
         width: 99px;
+    }
+
+    .nav-list {
+        display: none;
     }
 
     .header-btn {
@@ -119,6 +148,10 @@ html{
         font-weight: 300;
         line-height: 24px;
         margin-right: 17px;
+    }
+
+    .books-header .header-btn {
+        margin-left: auto;
     }
 
     .header-line {
@@ -2008,5 +2041,266 @@ html{
         padding-right: 42px;
         margin: 0;
         margin-bottom: 28px;
+    }
+}
+
+
+/* section top  */
+
+.section-top {
+    padding-top: 36px;
+    padding-bottom: 0;
+}
+
+.section-top-container {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+
+.section-top-link {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.section-top-title {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+}
+
+
+/* books start */
+
+.books {
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+.books-container {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.books-title {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 36px;
+    color: #3B3B3B;
+}
+
+.books-card {
+    padding: 24px;
+}
+
+.books-card-img {
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.books-card-title {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #3B3B3B;
+    margin-bottom: 8px;
+}
+
+.books-card-name {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #828080;
+    margin-bottom: 33px;
+}
+
+.books-card-stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.books-card-price {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-bottom: 16px;
+
+}
+
+.books-card-price-new {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #3B3B3B;
+}
+
+.books-card-price-old {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 39px;
+    text-align: left;
+    color: #828080;
+    text-decoration: line-through;
+}
+
+.books-card-bottom {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.books-card-btn {
+    min-width: 175px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border: 1px solid #828282;
+    background-color: transparent;
+    font-family: Museo Sans Cyrl;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #434343;
+    border-radius: 3px;
+}
+
+.books-card-save {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #D9D9D9;
+    font-size: 24px;
+}
+
+.books-card-save .fa-solid {
+    display: none;
+    color: #2B1EDD;
+}
+
+.books-card:hover .books-card-btn {
+    background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
+    color: white;
+    border: 1px solid transparent;
+}
+
+.books-card:hover .books-card-save .fa-regular {
+    display: none;
+}
+
+.books-card:hover .books-card-save .fa-solid {
+    display: block;
+}
+
+.book-cards {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.books-more-info {
+    width: 445px;
+    display: block;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ECECEC;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+}
+
+@media (max-width:1024px) {
+    .book-cards {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width:840px) {
+    .book-cards {
+        display: grid;
+        gap: 16px;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .books-card {
+        padding: 0;
+    }
+}
+
+@media (max-width:540px) {
+    .books {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .books-title {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 24px;
+    }
+
+    .books-card {
+        background-color: red;
+    }
+
+    .books-card-img {
+        margin-bottom: 19px;
+    }
+
+    .books-card-title {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #3B3B3B;
+        margin-bottom: 2px;
+    }
+
+    .books-card-name {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 4px;
+    }
+    .books-card-stars{
+        display: none;
     }
 }
