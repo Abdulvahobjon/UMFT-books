@@ -2300,7 +2300,461 @@ html {
         line-height: 24px;
         margin-bottom: 4px;
     }
-    .books-card-stars{
+
+    .books-card-stars {
         display: none;
+    }
+}
+
+/* kits page */
+
+.kits {
+    padding-top: 28px;
+    padding-bottom: 18px;
+    display: grid;
+    gap: 56px;
+}
+
+.kits-container {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.kits-card {
+    display: flex;
+    gap: 50px;
+}
+
+.kits-banner {
+    display: flex;
+    max-width: 679px;
+    background-color: red;
+    position: relative;
+}
+
+.kits-banner-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.kits-banner-discount {
+    width: 65px;
+    height: 65px;
+    background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    border-radius: 50%;
+    color: white;
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: center;
+
+}
+
+.kits-sell {
+    position: absolute;
+    right: -6px;
+    bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    padding: 4px 12px;
+    border-radius: 3px;
+    background-color: #3B3B3B;
+}
+
+.kits-sell-name {
+    color: #A8A8A8;
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: right;
+
+}
+
+.kits-sell-price {
+    color: white;
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: center;
+
+}
+
+.kits-info {
+    max-width: 417px;
+}
+
+.kits-title {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 13px;
+}
+
+.kits-text {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #828080;
+    margin-bottom: 23px;
+}
+
+.kits-btns {
+    display: flex;
+    gap: 18px;
+}
+
+.kits-btn-1 {
+    max-width: 174px;
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background-color: transparent;
+    border: 1px solid #828282;
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #434343;
+    border-radius: 3px;
+}
+
+.kits-btn-2 {
+    max-width: 174px;
+    width: 100%;
+    padding-left: 13px;
+    padding-right: 13px;
+    background-color: #F8F8F8;
+    border: 1px solid #828282;
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #434343;
+    border-radius: 3px;
+    border: none;
+}
+
+.kits-card:hover .kits-btn-1 {
+    background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
+    color: white;
+}
+
+@media (max-width: 780px) {
+    .kits {
+        padding-top: 12px;
+        padding-bottom: 28px;
+
+    }
+
+    .kits-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .kits-card {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .kits-banner-img {
+        height: 94px;
+    }
+
+    .kits-sell-price {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .kits-sell {
+        padding: 4px 12px;
+        bottom: 6px;
+        right: -4px;
+    }
+
+    .kits-sell-name {
+        font-size: 7px;
+        font-weight: 400;
+        line-height: 14px;
+    }
+
+    .kits-banner-discount {
+        width: 57px;
+        height: 57px;
+        top: -16px;
+        right: -16px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    .kits-title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        margin-bottom: 12px;
+    }
+
+    .kits-text {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 18px;
+    }
+
+    .kits-btns {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .kits-btn-1 {
+        max-width: 100%;
+        padding: 12px 20px;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    .kits-btn-2 {
+        max-width: 100%;
+        padding: 12px 20px;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    .section-top {
+        padding-top: 46px;
+        padding-bottom: 12px;
+    }
+
+    .section-top-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section-top-link {
+        display: none;
+    }
+}
+
+/* blog page start */
+.blog-page {
+    padding-top: 36px;
+    padding-bottom: 0;
+}
+
+.blog-page-container {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.blog-page-link {
+    display: flex;
+}
+
+.blog-page-info {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-page-title {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.blog-page-text {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #333333;
+    margin-bottom: 38px;
+}
+
+.blog-page-profil {
+    display: flex;
+    align-items: start;
+    gap: 14px;
+    margin-bottom: 37px;
+}
+
+.blog-page-profil-img {
+    border-radius: 50%;
+    width: 41px;
+    height: 41px;
+    object-fit: cover;
+}
+
+.blog-page-profil-info {}
+
+.blog-page-profil-name {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #3B3B3B;
+}
+
+.blog-page-profil-date {
+    display: flex;
+    gap: 12px;
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #828282;
+}
+
+.blog-page-profil-online {}
+
+.blog-page-profil-day {}
+
+.blog-page-profil-btn {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #828282;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.blog-page-about {
+    display: flex;
+    align-items: center;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #F2F2F2;
+    margin-bottom: 30px;
+}
+
+.blog-page-about-left {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-right: auto;
+}
+
+.blog-page-about-btn {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.blog-page-about-count {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #828282;
+}
+
+.blog-page-text-2 {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #333333;
+    margin-bottom: 18px;
+}
+
+.blog-page-title-2 {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.blog-page-title-3 {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #333333;
+    margin-bottom: 6px;
+}
+
+.blog-page-text-3 {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #333333;
+}
+
+@media (max-width:540px) {
+    .blog-page {
+        padding-top: 20px;
+    }
+    .blog-page-link{
+        margin-bottom: 20px;
+    }
+
+    .blog-page-title {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+    .blog-page-profil{
+        flex-wrap: wrap;
     }
 }
