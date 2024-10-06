@@ -18,6 +18,18 @@ html {
     scroll-behavior: smooth;
 }
 
+button {
+    cursor: pointer;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 1240px;
+}
+
 /* header start */
 .header {
     padding-top: 26px;
@@ -38,6 +50,7 @@ html {
 
 .header-logo {
     display: flex;
+    margin-right: auto;
 }
 
 .nav-list {
@@ -214,6 +227,12 @@ html {
     letter-spacing: 0.01em;
     text-align: left;
     color: #3B3B3B;
+    transition: all .3s;
+}
+
+.footer-social-link:hover {
+    color: black;
+    font-weight: 700;
 }
 
 .footer-menu-title {
@@ -243,6 +262,12 @@ html {
     text-align: left;
     color: #3B3B3B;
     text-decoration: none;
+    transition: all .3s;
+}
+
+.footer-menu-link:hover {
+    color: black;
+    font-weight: 700;
 }
 
 .footer-btns {
@@ -1979,6 +2004,13 @@ html {
     text-decoration: none;
 }
 
+.link-hover img {
+    transition: all .3s;
+}
+
+.link-hover:hover img {
+    transform: translateX(10px);
+}
 
 @media (max-width:880px) {
     .hero {
@@ -2070,240 +2102,21 @@ html {
     font-family: Museo Sans Cyrl, sans-serif;
     font-size: 36px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 36px;
     letter-spacing: 0.01em;
     text-align: left;
+    margin-bottom: 12px;
 
 }
 
-
-/* books start */
-
-.books {
-    padding-top: 28px;
-    padding-bottom: 28px;
-}
-
-.books-container {
-    max-width: 1240px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-.books-title {
+.section-top-text {
     font-family: Museo Sans Cyrl, sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 35px;
     letter-spacing: 0.01em;
     text-align: left;
-    margin-bottom: 36px;
     color: #3B3B3B;
-}
-
-.books-card {
-    padding: 24px;
-}
-
-.books-card-img {
-    display: block;
-    margin-bottom: 30px;
-    width: 100%;
-}
-
-.books-card-title {
-    font-family: Museo Sans Cyrl, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.01em;
-    text-align: left;
-    color: #3B3B3B;
-    margin-bottom: 8px;
-}
-
-.books-card-name {
-    font-family: Museo Sans Cyrl, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    text-align: left;
-    color: #828080;
-    margin-bottom: 33px;
-}
-
-.books-card-stars {
-    display: flex;
-    gap: 4px;
-    margin-bottom: 10px;
-}
-
-.books-card-price {
-    display: flex;
-    align-items: center;
-    gap: 26px;
-    margin-bottom: 16px;
-
-}
-
-.books-card-price-new {
-    font-family: Museo Sans Cyrl, sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 39px;
-    letter-spacing: 0.01em;
-    text-align: left;
-    color: #3B3B3B;
-}
-
-.books-card-price-old {
-    font-family: Museo Sans Cyrl, sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 39px;
-    text-align: left;
-    color: #828080;
-    text-decoration: line-through;
-}
-
-.books-card-bottom {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-}
-
-.books-card-btn {
-    min-width: 175px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    border: 1px solid #828282;
-    background-color: transparent;
-    font-family: Museo Sans Cyrl;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    text-align: center;
-    color: #434343;
-    border-radius: 3px;
-}
-
-.books-card-save {
-    display: flex;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    color: #D9D9D9;
-    font-size: 24px;
-}
-
-.books-card-save .fa-solid {
-    display: none;
-    color: #2B1EDD;
-}
-
-.books-card:hover .books-card-btn {
-    background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
-    color: white;
-    border: 1px solid transparent;
-}
-
-.books-card:hover .books-card-save .fa-regular {
-    display: none;
-}
-
-.books-card:hover .books-card-save .fa-solid {
-    display: block;
-}
-
-.book-cards {
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.books-more-info {
-    width: 445px;
-    display: block;
-    border: none;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #ECECEC;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    font-family: Museo Sans Cyrl, sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    text-align: center;
-    color: #000000;
-    cursor: pointer;
-}
-
-@media (max-width:1024px) {
-    .book-cards {
-        display: grid;
-        justify-content: space-between;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-@media (max-width:840px) {
-    .book-cards {
-        display: grid;
-        gap: 16px;
-        justify-content: space-between;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .books-card {
-        padding: 0;
-    }
-}
-
-@media (max-width:540px) {
-    .books {
-        padding-top: 18px;
-        padding-bottom: 18px;
-    }
-
-    .books-title {
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 26px;
-        margin-bottom: 24px;
-    }
-
-    .books-card {
-        background-color: red;
-    }
-
-    .books-card-img {
-        margin-bottom: 19px;
-    }
-
-    .books-card-title {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 20px;
-        color: #3B3B3B;
-        margin-bottom: 2px;
-    }
-
-    .books-card-name {
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 24px;
-        margin-bottom: 4px;
-    }
-
-    .books-card-stars {
-        display: none;
-    }
 }
 
 /* kits page */
@@ -2744,7 +2557,8 @@ html {
     .blog-page {
         padding-top: 20px;
     }
-    .blog-page-link{
+
+    .blog-page-link {
         margin-bottom: 20px;
     }
 
@@ -2754,7 +2568,539 @@ html {
         line-height: 36px;
         margin-bottom: 24px;
     }
-    .blog-page-profil{
+
+    .blog-page-profil {
         flex-wrap: wrap;
     }
+}
+
+/* books */
+.books {
+    padding-top: 56px;
+    padding-bottom: 50px;
+}
+
+.books-container {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.books-title {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #3B3B3B;
+    margin-bottom: 36px;
+}
+
+.books-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 47px;
+}
+
+
+.books-col {
+    max-width: 100%;
+    padding: 24px;
+}
+
+.books-col-img {
+    height: 231px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 30px;
+}
+
+.books-col-title {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #3B3B3B;
+}
+
+.books-col-name {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #828080;
+    margin-bottom: 33px;
+}
+
+.books-col-stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.books-col-sell {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.books-col-sell-price {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #3B3B3B;
+}
+
+.books-col-sell-price-old {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 39px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #828080;
+}
+
+.books-col-click {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.books-col-btn {
+    padding: 13px 20px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #828282;
+    border-radius: 3px;
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: center;
+
+}
+
+.books-col-click .fa-regular.fa-bookmark {
+    font-size: 24px;
+    color: #D9D9D9;
+}
+
+.books-btnMore {
+    max-width: 466px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6px 5px;
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    background-color: #ECECEC;
+    border: none;
+    border-radius: 3px;
+}
+
+.books-heading {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 40.8px;
+    font-weight: 700;
+    line-height: 50.5px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 81px;
+    color: #2B1EDD;
+    text-transform: uppercase;
+}
+
+@media (max-width: 998px) {
+    .books-row {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .books-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 540px) {
+    .books-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .books-col {
+        padding: 0;
+    }
+
+    .books-col-img {
+        height: 195px;
+        object-fit: contain;
+        object-position: top;
+        margin-bottom: 19px;
+    }
+
+    .books-col-title {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 2px;
+    }
+
+    .books-col-name {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #828080;
+        margin-bottom: 4px;
+    }
+
+    .books-col-stars {
+        display: none;
+    }
+
+    .books-col-sell {
+        margin-bottom: 6px;
+    }
+
+    .books-col-sell-price {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 39px;
+    }
+
+    .books-col-sell-price-old {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 39px;
+    }
+
+    .books-col-btn {
+        padding: 3px 10px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #434343;
+    }
+
+    .books-col-click .fa-regular.fa-bookmark {
+        font-size: 16px;
+        color: #D9D9D9;
+        padding: 7px;
+    }
+
+    .books-heading {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 46px;
+        margin-bottom: 36px;
+    }
+
+}
+
+/* kits-inside */
+
+.kits-inside {
+    padding-top: 36px;
+    padding-bottom: 43px;
+}
+
+.kits-inside-container {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.kits-inside-img {
+    width: 100%;
+    margin-bottom: 36px;
+}
+
+.kits-inside-title {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.kits-inside-text {
+    font-family: Museo Sans Cyrl;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+@media (max-width:540px) {
+    .kits-inside {
+        padding-top: 12px;
+        padding-bottom: 34px;
+    }
+
+    .kits-inside-img {
+        margin-bottom: 24px;
+    }
+
+    .kits-inside-title {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 12px;
+    }
+
+    .kits-inside-text {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}
+
+
+/* set section start */
+
+.set {
+    padding-top: 43px;
+    padding-bottom: 65px;
+}
+
+.set-container {
+    max-width: 1032px;
+}
+
+.set-title {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 40.8px;
+    font-weight: 700;
+    line-height: 50.5px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.set-box {
+    background-color: #F8F8F8;
+    padding-bottom: 50px;
+}
+
+.set-banner {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 637px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.set-banner-img {
+    width: 100%;
+}
+
+.set-banner-discount {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
+    border-radius: 50%;
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: white;
+    position: absolute;
+    right: 15px;
+    top: 59px;
+}
+
+.set-book-title {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 11px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.set-price {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 40px;
+}
+
+.set-price-new {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: -0.075em;
+    text-align: left;
+    color: #3B3B3B;
+}
+
+.set-price-old {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 39px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #828080;
+}
+
+.set-btn {
+    padding: 16px 20px;
+    max-width: 356px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: none;
+    background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%),
+        linear-gradient(0deg, #ECECEC, #ECECEC),
+        linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 16.5px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: white;
+    border-radius: 3px;
+
+}
+
+
+
+@media (max-width:540px) {
+    .set {
+        padding-top: 34px;
+        padding-bottom: 28px;
+    }
+
+    .set-title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42px;
+        text-align: center;
+        margin-bottom: 38px;
+    }
+
+    .set-box {
+        padding-top: 14px;
+        padding-bottom: 30px;
+    }
+
+    .set-banner-discount {
+        width: 57px;
+        height: 57px;
+        font-family: Museo Sans Cyrl;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        top: -29px;
+        right: 12px;
+    }
+
+    .set-banner {
+        margin-bottom: 12px;
+    }
+
+    .set-book-title {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-top: 0;
+        margin-bottom: 4px;
+    }
+
+    .set-price {
+        gap: 20px;
+        margin-bottom: 27px;
+    }
+
+    .set-price-new {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 39px;
+    }
+
+    .set-price-old {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 39px;
+    }
+
+    .set-btn {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        text-align: center;
+        color: white;
+        padding-top: 3px;
+        padding-bottom: 2px;
+        max-width: 216px;
+    }
+}
+
+/* recipes start */
+.recipes {
+    padding-top: 88px;
+}
+
+.recipes-title {
+    font-family: Museo Sans Cyrl, sans-serif;
+    text-transform: uppercase;
+    font-size: 40.8px;
+    font-weight: 700;
+    line-height: 50.5px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.recipes-text {
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 62px;
+
 }

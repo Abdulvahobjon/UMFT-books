@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Books</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/swipper.css">
 </head>
 
 <body>
-
     <!-- header start -->
     <header class="header books-header">
         <div class="header-container">
@@ -42,6 +44,7 @@
     </header>
     <!-- header end -->
 
+    <!-- section top -->
     <section class="section-top">
         <div class="section-top-container">
             <a class="section-top-link" href="#">
@@ -51,218 +54,514 @@
 
         </div>
     </section>
+    <!-- section top end -->
 
-    <div>
-        <section class="books">
-            <div class="books-container">
-                <h3 class="books-title">Книги А. Ч. Бхактиведанта Свами Прабхупада</h3>
-                <div class="book-cards">
-                    <div class="books-card">
-                        <img class="books-card-img" src="./img/books/img-1.png" alt="">
-                        <h4 class="books-card-title">Бесценный дар</h4>
-                        <p class="books-card-name">Шрила Прабхупада</p>
-                        <div class="books-card-stars">
+    <section class="books">
+        <div class="books-container">
+            <div>
+                <h2 class="books-title">Книги А. Ч. Бхактиведанта Свами Прабхупада</h2>
+                <div class="books-row">
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star-2.svg" alt="">
                             <img src="./img/books/Star-2.svg" alt="">
                         </div>
-                        <div class="books-card-price">
-                            <span class="books-card-price-new">55 ₽</span>
-                            <span class="books-card-price-old">89 ₽</span>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
                         </div>
-                        <div class="books-card-bottom">
-                            <button class="books-card-btn">Купить</button>
-                            <button class="books-card-save">
-                                <i class="fa-regular fa-bookmark"></i>
-                                <i class="fa-solid fa-bookmark"></i>
-
-                            </button>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
                         </div>
                     </div>
-                    <div class="books-card">
-                        <img class="books-card-img" src="./img/books/img-1.png" alt="">
-                        <h4 class="books-card-title">Бесценный дар</h4>
-                        <p class="books-card-name">Шрила Прабхупада</p>
-                        <div class="books-card-stars">
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star-2.svg" alt="">
                             <img src="./img/books/Star-2.svg" alt="">
                         </div>
-                        <div class="books-card-price">
-                            <span class="books-card-price-new">55 ₽</span>
-                            <span class="books-card-price-old">89 ₽</span>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
                         </div>
-                        <div class="books-card-bottom">
-                            <button class="books-card-btn">Купить</button>
-                            <button class="books-card-save">
-                                <i class="fa-regular fa-bookmark"></i>
-                                <i class="fa-solid fa-bookmark"></i>
-
-                            </button>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
                         </div>
                     </div>
-                    <div class="books-card">
-                        <img class="books-card-img" src="./img/books/img-1.png" alt="">
-                        <h4 class="books-card-title">Бесценный дар</h4>
-                        <p class="books-card-name">Шрила Прабхупада</p>
-                        <div class="books-card-stars">
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star-2.svg" alt="">
                             <img src="./img/books/Star-2.svg" alt="">
                         </div>
-                        <div class="books-card-price">
-                            <span class="books-card-price-new">55 ₽</span>
-                            <span class="books-card-price-old">89 ₽</span>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
                         </div>
-                        <div class="books-card-bottom">
-                            <button class="books-card-btn">Купить</button>
-                            <button class="books-card-save">
-                                <i class="fa-regular fa-bookmark"></i>
-                                <i class="fa-solid fa-bookmark"></i>
-
-                            </button>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
                         </div>
                     </div>
-                    <div class="books-card">
-                        <img class="books-card-img" src="./img/books/img-1.png" alt="">
-                        <h4 class="books-card-title">Бесценный дар</h4>
-                        <p class="books-card-name">Шрила Прабхупада</p>
-                        <div class="books-card-stars">
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star-2.svg" alt="">
                             <img src="./img/books/Star-2.svg" alt="">
                         </div>
-                        <div class="books-card-price">
-                            <span class="books-card-price-new">55 ₽</span>
-                            <span class="books-card-price-old">89 ₽</span>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
                         </div>
-                        <div class="books-card-bottom">
-                            <button class="books-card-btn">Купить</button>
-                            <button class="books-card-save">
-                                <i class="fa-regular fa-bookmark"></i>
-                                <i class="fa-solid fa-bookmark"></i>
-
-                            </button>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
                         </div>
                     </div>
+                </div>
 
+            </div>
+            <div>
+                <h2 class="books-title">Комплекты</h2>
+                <div class="books-row">
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                        </div>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
+                        </div>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                        </div>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
+                        </div>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                        </div>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
+                        </div>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                        </div>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
+                        </div>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="books">
-            <div class="books-container">
-                <h3 class="books-title">Книги А. Ч. Бхактиведанта Свами Прабхупада</h3>
-                <div class="book-cards">
-                    <div class="books-card">
-                        <img class="books-card-img" src="./img/books/img-1.png" alt="">
-                        <h4 class="books-card-title">Бесценный дар</h4>
-                        <p class="books-card-name">Шрила Прабхупада</p>
-                        <div class="books-card-stars">
+            <div style="text-align: center;">
+                <button class="books-btnMore">Смотреть все комплекты</button>
+            </div>
+            <div>
+                <h2 class="books-title">Для практик Шрилы Прабхупады</h2>
+                <div class="books-row">
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star-2.svg" alt="">
                             <img src="./img/books/Star-2.svg" alt="">
                         </div>
-                        <div class="books-card-price">
-                            <span class="books-card-price-new">55 ₽</span>
-                            <span class="books-card-price-old">89 ₽</span>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
                         </div>
-                        <div class="books-card-bottom">
-                            <button class="books-card-btn">Купить</button>
-                            <button class="books-card-save">
-                                <i class="fa-regular fa-bookmark"></i>
-                                <i class="fa-solid fa-bookmark"></i>
-
-                            </button>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
                         </div>
                     </div>
-                    <div class="books-card">
-                        <img class="books-card-img" src="./img/books/img-1.png" alt="">
-                        <h4 class="books-card-title">Бесценный дар</h4>
-                        <p class="books-card-name">Шрила Прабхупада</p>
-                        <div class="books-card-stars">
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star-2.svg" alt="">
                             <img src="./img/books/Star-2.svg" alt="">
                         </div>
-                        <div class="books-card-price">
-                            <span class="books-card-price-new">55 ₽</span>
-                            <span class="books-card-price-old">89 ₽</span>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
                         </div>
-                        <div class="books-card-bottom">
-                            <button class="books-card-btn">Купить</button>
-                            <button class="books-card-save">
-                                <i class="fa-regular fa-bookmark"></i>
-                                <i class="fa-solid fa-bookmark"></i>
-
-                            </button>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
                         </div>
                     </div>
-                    <div class="books-card">
-                        <img class="books-card-img" src="./img/books/img-1.png" alt="">
-                        <h4 class="books-card-title">Бесценный дар</h4>
-                        <p class="books-card-name">Шрила Прабхупада</p>
-                        <div class="books-card-stars">
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star-2.svg" alt="">
                             <img src="./img/books/Star-2.svg" alt="">
                         </div>
-                        <div class="books-card-price">
-                            <span class="books-card-price-new">55 ₽</span>
-                            <span class="books-card-price-old">89 ₽</span>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
                         </div>
-                        <div class="books-card-bottom">
-                            <button class="books-card-btn">Купить</button>
-                            <button class="books-card-save">
-                                <i class="fa-regular fa-bookmark"></i>
-                                <i class="fa-solid fa-bookmark"></i>
-
-                            </button>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
                         </div>
                     </div>
-                    <div class="books-card">
-                        <img class="books-card-img" src="./img/books/img-1.png" alt="">
-                        <h4 class="books-card-title">Бесценный дар</h4>
-                        <p class="books-card-name">Шрила Прабхупада</p>
-                        <div class="books-card-stars">
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star.svg" alt="">
                             <img src="./img/books/Star-2.svg" alt="">
                             <img src="./img/books/Star-2.svg" alt="">
                         </div>
-                        <div class="books-card-price">
-                            <span class="books-card-price-new">55 ₽</span>
-                            <span class="books-card-price-old">89 ₽</span>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
                         </div>
-                        <div class="books-card-bottom">
-                            <button class="books-card-btn">Купить</button>
-                            <button class="books-card-save">
-                                <i class="fa-regular fa-bookmark"></i>
-                                <i class="fa-solid fa-bookmark"></i>
-
-                            </button>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </section>
-        <button class="books-more-info">Смотреть все комплекты</button>
-    </div>
+            <div style="text-align: center;">
+                <button class="books-btnMore">Смотреть все комплекты</button>
+            </div>
+
+            <div>
+                <h2 class="books-title">Рецепты </h2>
+                <div class="books-row">
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                        </div>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
+                        </div>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                        </div>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
+                        </div>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                        </div>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
+                        </div>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <button class="books-btnMore">Смотреть все комплекты</button>
+            </div>
+
+            <div>
+                <h2 class="books-title">Книги А. Ч. Бхактиведанта Свами Прабхупада</h2>
+                <div class="books-row">
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                        </div>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
+                        </div>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                        </div>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
+                        </div>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                        </div>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
+                        </div>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                        </div>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
+                        </div>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                        </div>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
+                        </div>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                        </div>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
+                        </div>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                        </div>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
+                        </div>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="books-col">
+                        <img class="books-col-img" src="./img/books/img-1.png" alt="">
+                        <h3 class="books-col-title">Бесценный дар</h3>
+                        <p class="books-col-name">Шрила Прабхупада</p>
+                        <div class="books-col-stars">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                            <img src="./img/books/Star-2.svg" alt="">
+                        </div>
+                        <div class="books-col-sell">
+                            <span class="books-col-sell-price">55 ₽</span>
+                            <span class="books-col-sell-price-old">89 ₽</span>
+                        </div>
+                        <div class="books-col-click">
+                            <button class="books-col-btn">Купить</button>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
 
 
     <!-- footer start -->
@@ -333,6 +632,23 @@
     </footer>
     <!-- footer end  -->
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            navigation: {
+                nextEl: ".swiper-button-next1",
+                prevEl: ".swiper-button-prev1",
+            },
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
